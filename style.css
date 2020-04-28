@@ -1,0 +1,123 @@
+body{
+    background-color: #CAE9E8;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+img{
+    position: relative;
+    top: 10px;
+    height: 200px;
+    width: 180px;
+    border: 5px groove #6DACD2;
+    margin: 17px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+}
+h1{
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    width: 400px;
+    text-align: center;
+    background-color: #C9E6F7;
+    margin-top: 0;
+    margin: auto;
+    box-shadow: inset 0px -12px 17px -7px #79A9C5;
+   
+}
+hr{
+    margin-top: 15px;
+    width: 85.5%;
+}
+/*.cards{
+    position: relative;
+  
+    height: 150px;
+    width: 200px;
+    border: 5px groove #6DACD2;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #97B2C2;
+    transition: 1s;
+    
+}
+.cards:hover{
+    transform: scale(1.1);
+}*/
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    perspective: 1000px;
+    transition: transform 0.2s;
+    cursor: pointer;
+   
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+    
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+.flip-card-main{
+    transform: rotateY(180deg);
+    
+}
+ /* .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);*/
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+   
+  }
+  
+  .flip-card-front {
+    background-color: #2980b9;
+    transition: transform 0.2s;
+    margin: 0;
+    height: 100%;
+    
+   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: black;
+    
+  }
+  
+  .flip-card-back {
+    background-color: #fff;
+    
+    transition: transform 0.2s;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: rotateY(180deg);
+  }
+
+  .test-flip-card{
+
+      transform: rotateY(180deg);
+  }
